@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4c3;
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+header {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 300px; /* Fixed width for the header */
+    position: fixed; /* Fix header to the left */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: aqua;
+    border-radius: 10px;
+    color: red;
+    padding: 5px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50% 5%;
+    box-shadow: 0 0 10px gray;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #64f36b;
+    transform: translateY(-3px);
+}
+
+main {
+    margin-left: 300px; /* Leave space for the fixed header */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: calc(100% - 300px); /* Adjust main width */
+    overflow-y: auto; /* Scroll if content overflows */
+    height: 100vh;
+}
+
+.recipe {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.recipe h3 {
+    color: #8bc34a; /* Light green shade for headings */
+    margin-bottom: 10px;
+}
+
+.recipe p {
+    font-size: 14px;
+    color: #555;
+}
+
+a.viewRecipeBtn {
+    display: block;
+    padding: 10px;
+    background-color: #388e3c; /* Button color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50% 5%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+a.viewRecipeBtn:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
